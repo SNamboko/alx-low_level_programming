@@ -12,7 +12,7 @@ File: 0-preprocessor
 A script that compiles a C file but does not link.
 - The C file name will be saved in the variable $CFILE
 - The output file should be named the same as the C file, but with the extension .o instead of .c.
--- Example: if the C file is main.c, the output file should be main.o
+	- Example: if the C file is main.c, the output file should be main.o
 > > Correct output: export CFILE=1-main.c ; ./1-compiler where main.c contains 
 main function printing a string on the standard output.
 File: 1-compiler
@@ -22,11 +22,13 @@ A script that generates the assembly code of a C code and save it in an output f
 - The C file name will be saved in the variable $CFILE
 - The output file should be named the same as the C file, but with the extension .s instead of .c.
 	- Example: if the C file is main.c, the output file should be main.s
+> > Correct output: export CFILE=2-main.c ; ./2-assembler where main.c contains a main function printing a string on the standard output.
 File: 2-assembler
 
 	3. Name
 A  script that compiles a C file and creates an executable named cisfun.
 - The C file name will be saved in the variable $CFILE 
+> > 
 File: 3-name
 
 	4. Hello, puts
